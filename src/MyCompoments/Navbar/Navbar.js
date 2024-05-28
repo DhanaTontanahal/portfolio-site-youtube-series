@@ -3,6 +3,7 @@ import "./Navbar.css";
 import LOGO from "../../assets/LOGO.png";
 import menu_icon from "../../assets/menu_open.svg";
 import close_menu from "../../assets/menu_close.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const menuRefe = useRef();
@@ -30,11 +31,21 @@ const Navbar = () => {
             onClick={closeMenu}
             className="close-mobile-nav"
           />
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <Link className="link-tag" to="/">
+            Home
+          </Link>
+          <Link className="link-tag" to="/about">
+            About
+          </Link>
+          <Link className="link-tag" to="/services">
+            Services
+          </Link>
+          <Link className="link-tag" to="/portfolio">
+            Portfolio
+          </Link>
+          <Link className="link-tag" to="/contact">
+            Contact
+          </Link>
         </ul>
       </div>
       <div className="nav-connect">Connect With Me</div>
