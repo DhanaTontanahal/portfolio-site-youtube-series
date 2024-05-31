@@ -38,6 +38,9 @@
     display: none;
 }
 
+.link-tag {
+    color: aliceblue;
+}
 
 @media (max-width:768px) {
     .navbar {
